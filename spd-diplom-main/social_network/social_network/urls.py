@@ -22,10 +22,9 @@ from django.conf.urls.static import static
 from rest_framework.routers import DefaultRouter
 
 
-from posts.views import PostViewSet, CommentViewSet
+from posts.views import PostViewSet, CommentViewSet, PostDetailView
 
 router = DefaultRouter()
-
 
 router.register(r'posts', PostViewSet)
 
